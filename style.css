@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+h2, h3, h4, h5, h6 , p {
+    font-weight: 200;
+}
+
+.container {
+    height: 100vh;
+    background: url(images/background.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.main {
+    width: min(90vw, 480px);
+}
+
+.title {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.card , .result{
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    position: relative;
+    padding: 3rem 2rem;
+}
+
+.card img {
+    position: absolute;
+    right: 0;
+    top: -10vh;
+}
+
+.question {
+    color: #2F527B;
+    min-height: 86px;
+}
+
+.option {
+    margin-bottom: 1rem;
+    border: 2px solid gray;
+    border-radius: 1rem;
+    color: gray;
+    cursor: pointer;
+    height: 58px;
+}
+
+.option b {
+    margin: 0 1rem;
+    font-size: 23px;
+}
+
+.option p {
+    display: inline-block;
+}
+
+.hover:hover {
+    border: 2px solid transparent;
+    background-color: #F9A826;
+    color: #fff;
+}
+
+.correct {
+    border: 2px solid transparent;
+    background-color: #60BF88;
+    color: #fff;
+}
+
+.incorrect {
+    border: 2px solid transparent;
+    background-color: #EA8282;
+    color: #fff;
+}
+
+.btn {
+    text-transform: capitalize;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn a {
+    background-color: #F9A826;
+    padding: 1rem 2rem;
+    border-radius: .7rem;
+    color: #fff;
+    font-weight: 900;
+}
+
+.btn a+a {
+    margin-left: auto;
+}
+
+.wrap {
+    position: relative;
+}
+
+
+.result {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    visibility: hidden;
+    transition: 0.5s linear;
+
+}
+
+.result a {
+    padding: 1rem 2rem;
+    border-radius: .7rem;
+    font-weight: 900;
+    border: 2px solid gray;
+}
+
+.score {
+    color: rgb(4, 163, 124);
+    font-size: 42px;
+}
+
+.show {
+    visibility: visible;
+    transform: translateX(-100%);
+}

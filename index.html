@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Country quiz</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <div class="title"><h1>country quiz</h1></div>
+
+        <div class="wrap">
+          <div class="card">
+            <img src="images/undraw_adventure_4hum 1.svg" alt="" />
+            <div class="question">
+              <h1>Capital of <b></b> is :</h1>
+            </div>
+            <div class="option option-1">
+              <b>A</b>
+              <p></p>
+            </div>
+            <div class="option option-2">
+              <b>B</b>
+              <p></p>
+            </div>
+            <div class="option option-3">
+              <b>C</b>
+              <p></p>
+            </div>
+            <div class="option option-4">
+              <b>D</b>
+              <p></p>
+            </div>
+
+            <div class="btn">
+              <a href="javascript:void(0)" onclick="show_result()">Show Result</a>
+              <a href="javascript:void(0)" onclick="next_step()">next</a>
+            </div>
+          </div>
+
+
+          <div class="result">
+            <img src="images/undraw_winners_ao2o 2.svg" alt="">
+            <h1>Results</h1>
+            <p>You got <b class="score">0</b>/<b class="count">0</b>  correct answers </p>
+            <a href="javascript:void(0)" onclick="playAgain()">Try again</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
